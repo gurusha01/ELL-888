@@ -269,17 +269,3 @@ import matplotlib.pylab as plt
 a = sns.heatmap(C_0.T@C_0,cmap='CMRmap_r')
 plt.title("Cora", x=0.5, y=0.9,weight="bold")
 #a.figure.savefig("polblogs_heatmap_03.eps",dpi=1500)
-
-REE=[0.86, 0.80, 0.77, 0.75]
-miscalss=[1242, 999, 907, 826]
-delta=[0, 50, 100, 150, 175]
-
-obj = solver_v2(X, Y, k, 500, 20, 400, X.shape[1]/2, 150) 
-Miscalss=596
-REE=1.5
-
-1890:150;  1729:300; 1688:200
-
-from sklearn.manifold import TSNE
-tsne = TSNE(n_components=2, verbose=1, perplexity=40, n_iter=300)
-tsne_results = tsne.fit_transform()
